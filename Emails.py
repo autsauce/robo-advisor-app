@@ -1,6 +1,3 @@
-from gclogic import HelperFunctions as hf
-from gclogic import AlpacaAPI, AzureAPI
-
 alpaca = AlpacaAPI.initiate_API(live=LIVE)
 azure = AzureAPI.initiate_API(live=LIVE)
 

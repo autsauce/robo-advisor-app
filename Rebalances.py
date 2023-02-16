@@ -1,8 +1,3 @@
-TEST = True
-
-from gclogic import AlpacaAPI, AzureAPI
-from gclogic import HelperFunctions as hf
-from gclogic import Portfolios
 from datetime import timedelta as td
 from datetime import datetime as dt
 from pytz import timezone as tz

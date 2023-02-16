@@ -1,4 +1,3 @@
-from gclogic import AlpacaAPI, AzureAPI
 from datetime import timedelta as td
 from datetime import datetime as dt
 from dateutil import parser as ps

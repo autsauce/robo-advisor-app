@@ -325,7 +325,6 @@ class Alpaca(object):
       self._check_status(r)
       return r.json()['quote']
 
-
   def get_last_trade(self,symbol:str = None):
     asset_class = self.get_asset(symbol)['class']
     if asset_class == 'crypto':
@@ -377,7 +376,6 @@ class Alpaca(object):
 
   def get_asset_volatility(self,symbol:str = None,lookback:int=63):
 
-    quandl.ApiConfig.api_key = "tZowwzzJLTGsuZBrTAyq"
     asset_class = self.get_asset_class(symbol)
     if asset_class == 'crypto':
       raise Exception('Use FTX API for crypto pairs.')
@@ -396,7 +394,6 @@ class Alpaca(object):
 
   def get_asset_momentum(self,symbol:str = None,lookback:int=252):
 
-    quandl.ApiConfig.api_key = "tZowwzzJLTGsuZBrTAyq"
     asset_class = self.get_asset_class(symbol)
     if asset_class == 'crypto':
       raise Exception('Use FTX API for crypto pairs.')
